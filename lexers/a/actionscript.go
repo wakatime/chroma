@@ -36,4 +36,9 @@ var Actionscript = internal.Register(MustNewLexer(
 			{`'(\\\\|\\'|[^'])*'`, LiteralStringSingle, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// This is only used to disambiguate between ActionScript and
+	// ActionScript3. We return 0 here; the ActionScript3 lexer will match
+	// AS3 variable definitions and that will hopefully suffice.
+	return 0
+}))

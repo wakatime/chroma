@@ -1,6 +1,8 @@
 package q
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -64,4 +66,10 @@ var Qbasic = internal.Register(MustNewLexer(
 			{`\b(ACCESS|ALIAS|ANY|APPEND|AS|BASE|BINARY|BYVAL|CASE|CDECL|DOUBLE|ELSE|ELSEIF|ENDIF|INTEGER|IS|LIST|LOCAL|LONG|LOOP|MOD|NEXT|OFF|ON|OUTPUT|RANDOM|SIGNAL|SINGLE|STEP|STRING|THEN|TO|UNTIL|USING|WEND)\b`, Keyword, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if strings.Contains(text, "$DYNAMIC") || strings.Contains(text, "$STATIC") {
+		return 0.9
+	}
+
+	return 0
+}))

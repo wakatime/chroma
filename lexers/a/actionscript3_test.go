@@ -16,5 +16,5 @@ func TestActionscript3_AnalyseText(t *testing.T) {
 	analyser, ok := a.Actionscript3.(chroma.Analyser)
 	assert.True(t, ok)
 
-	assert.Equal(t, 0.3, analyser.AnalyseText(string(data)))
+	assert.Equal(t, float32(0.3), analyser.AnalyseText(string(data)))
 }

@@ -7,7 +7,7 @@ import (
 	"github.com/alecthomas/chroma/lexers/internal"
 )
 
-var vbnetAnalyserRe = regexp.MustCompile(`^\s*(#If|Module|Namespace)`)
+var vbnetAnalyserRe = regexp.MustCompile(`(?m)^\s*(#If|Module|Namespace)`)
 
 const vbName = `[_\w][\w]*`
 

@@ -1,1 +1,2 @@
+
 Namespace WakaTime

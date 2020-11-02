@@ -1,8 +1,15 @@
 package c
 
 import (
+	"regexp"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
+)
+
+var (
+	cppAnalyserIncludeRe   = regexp.MustCompile(`#include <[a-z_]+>`)
+	cppAnalyserNamespaceRe = regexp.MustCompile(`using namespace `)
 )
 
 // CPP lexer.
@@ -103,4 +110,14 @@ var CPP = internal.Register(MustNewLexer(
 			{`.*?\n`, Comment, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if cppAnalyserIncludeRe.MatchString(text) {
+		return 0.2
+	}
+
+	if cppAnalyserNamespaceRe.MatchString(text) {
+		return 0.4
+	}
+
+	return 0
+}))

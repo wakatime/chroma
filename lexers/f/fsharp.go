@@ -1,6 +1,8 @@
 package f
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -91,4 +93,18 @@ var Fsharp = internal.Register(MustNewLexer(
 			{`"`, LiteralString, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// F# doesn't have that many unique features -- |> and <| are weak
+	// indicators.
+	var result float32 = 0
+
+	if strings.Contains(text, "|>") {
+		result += 0.05
+	}
+
+	if strings.Contains(text, "<|") {
+		result += 0.05
+	}
+
+	return result
+}))

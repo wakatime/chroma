@@ -1,8 +1,15 @@
 package c
 
 import (
+	"regexp"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
+)
+
+var (
+	cAnalyserIncludeRe = regexp.MustCompile(`(?m)^\s*#include [<"]`)
+	cAnalyserIfdefRe   = regexp.MustCompile(`(?m)^\s*#ifn?def `)
 )
 
 // C lexer.
@@ -88,4 +95,14 @@ var C = internal.Register(MustNewLexer(
 			{`.*?\n`, Comment, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if cAnalyserIncludeRe.MatchString(text) {
+		return 0.1
+	}
+
+	if cAnalyserIfdefRe.MatchString(text) {
+		return 0.1
+	}
+
+	return 0
+}))

@@ -1,9 +1,13 @@
 package f
 
 import (
+	"regexp"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
+
+var forthAnalyzerRe = regexp.MustCompile(`\n:[^\n]+;\n`)
 
 // Forth lexer.
 var Forth = internal.Register(MustNewLexer(
@@ -37,4 +41,12 @@ var Forth = internal.Register(MustNewLexer(
 			{`[^"]+`, LiteralString, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// Forth uses : COMMAND ; quite a lot in a single line, so we're trying
+	// to find that.
+	if forthAnalyzerRe.MatchString(text) {
+		return 0.1
+	}
+
+	return 0
+}))

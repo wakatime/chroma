@@ -3,7 +3,10 @@ package r
 import (
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
+	"github.com/dlclark/regexp2"
 )
+
+var rAnalyzerRe = regexp2.MustCompile(`[a-z0-9_\])\s]<-(?!-)`, regexp2.None)
 
 // R/S lexer.
 var R = internal.Register(MustNewLexer(
@@ -63,4 +66,11 @@ var R = internal.Register(MustNewLexer(
 			{`([^"\\]|\\.)*"`, LiteralString, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	matched, _ := rAnalyzerRe.MatchString(text)
+	if matched {
+		return 0.11
+	}
+
+	return 0
+}))

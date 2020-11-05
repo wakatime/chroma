@@ -43,4 +43,7 @@ var Octave = internal.Register(MustNewLexer(
 			{`(\s*)([a-zA-Z_]\w*)`, ByGroups(Text, NameFunction), Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// Octave is quite hard to spot, and it looks like Matlab as well.
+	return 0
+}))

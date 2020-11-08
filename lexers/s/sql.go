@@ -46,4 +46,6 @@ var SQL = internal.Register(MustNewLexer(
 			{`"`, LiteralStringDouble, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	return 0.01
+}))

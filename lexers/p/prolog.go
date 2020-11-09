@@ -1,6 +1,8 @@
 package p
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -47,4 +49,10 @@ var Prolog = internal.Register(MustNewLexer(
 			{`[*/]`, CommentMultiline, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if strings.Contains(text, ":-") {
+		return 1.0
+	}
+
+	return 0
+}))

@@ -37,7 +37,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 |                | TypoScript     |                    |
 | `*.v`          | Coq            |                    |
 |                | verilog        |                    |
-| `*.xslt`       | HTML           |                    |
+| `*.xslt`       | HTML           | :heavy_check_mark: |
 |                | XML            |                    |
 
 ## Long tail languages

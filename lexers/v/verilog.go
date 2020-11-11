@@ -1,6 +1,8 @@
 package v
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -65,4 +67,22 @@ var Verilog = internal.Register(MustNewLexer(
 			{`[\w:]+\*?`, NameNamespace, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// Verilog code will use one of reg/wire/assign for sure, and that
+	// is not common elsewhere.
+	var result float32 = 0
+
+	if strings.Contains(text, "reg") {
+		result += 0.1
+	}
+
+	if strings.Contains(text, "wire") {
+		result += 0.1
+	}
+
+	if strings.Contains(text, "assign") {
+		result += 0.1
+	}
+
+	return result
+}))

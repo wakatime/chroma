@@ -8,8 +8,8 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | ---            | ---            | ---                |
 | `*.as`         | ActionScript   | :heavy_check_mark: |
 |                | ActionScript 3 | :heavy_check_mark: |
-| `*.asm`        | NASM           |                    |
-|                | TASM           |                    |
+| `*.asm`        | NASM           | :heavy_check_mark: |
+|                | TASM           | :heavy_check_mark: |
 | `*.bas`        | QBasic         | :heavy_check_mark: |
 |                | VB.net         | :heavy_check_mark: |
 | `*.c`          | C              | :heavy_check_mark: |

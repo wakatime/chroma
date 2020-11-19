@@ -27,7 +27,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 |                | Octave         | :heavy_check_mark: |
 | `*.mc`         | Mason          | :heavy_check_mark: |
 |                | MonkeyC        |                    |
-| `*.pl`         | Perl           |                    |
+| `*.pl`         | Perl           | :heavy_check_mark: |
 |                | Prolog         | :heavy_check_mark: |
 | `*.s`          | GAS            | :heavy_check_mark: |
 |                | R              | :heavy_check_mark: |
@@ -45,18 +45,18 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | file extension(s)                                    | lexer            | lexer exists | note                                | done               |
 | ---                                                  | ---              | ---          | ---                                 | ---                |
 | `*.asax`,`*.ascx`,`*.ashx`,`*.asmx`,`*.aspx`,`*.axd` | aspx-cs          | :x:          |                                     | :heavy_check_mark: |
-|                                                      | aspx-vb          | :x:          |                                     |                    |
+|                                                      | aspx-vb          | :x:          |                                     | :heavy_check_mark: |
 | `*.ASM`                                              | NASM             |              |                                     |                    |
 |                                                      | TASM             |              |                                     |                    |
 | `*.S`                                                | GAS              |              |                                     |                    |
 |                                                      | S                | :x:          |                                     |                    |
 | `*.b`                                                | Brainfuck        |              |                                     |                    |
-|                                                      | Limbo            | :x:          |                                     |                    |
+|                                                      | Limbo            | :x:          |                                     | :heavy_check_mark: |
 | `*.bas`                                              | CBM BASIC V2     | :x:          |                                     | :heavy_check_mark: |
 |                                                      | QBasic           |              |                                     |                    |
 |                                                      | VB.net           |              |                                     |                    |
-| `*.bug`                                              | BUGS             | :x:          |                                     |                    |
-|                                                      | JAGS             | :x:          |                                     |                    |
+| `*.bug`                                              | BUGS             | :x:          |                                     | :heavy_check_mark: |
+|                                                      | JAGS             | :x:          |                                     | :heavy_check_mark: |
 | `*.def`                                              | Modula-2         |              |                                     |                    |
 |                                                      | Singularity      | :x:          |                                     |                    |
 | `*.ecl`                                              | ECL              | :x:          |                                     |                    |

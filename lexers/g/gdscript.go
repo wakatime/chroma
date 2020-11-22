@@ -131,7 +131,7 @@ var GDScript = internal.Register(MustNewLexer(
 		},
 	},
 ).SetAnalyser(func(text string) float32 {
-	var result float32 = 0
+	var result float64
 
 	if gdscriptAnalyserFuncRe.MatchString(text) {
 		result += 0.8
@@ -145,6 +145,5 @@ var GDScript = internal.Register(MustNewLexer(
 		result += 0.2
 	}
 
-	return float32(math.Min(float64(result), float64(1.0)))
-
+	return float32(math.Min(result, float64(1.0)))
 }))

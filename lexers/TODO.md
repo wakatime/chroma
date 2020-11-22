@@ -37,7 +37,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 |                | TypoScript     |                    |
 | `*.v`          | Coq            | :heavy_check_mark: |
 |                | verilog        | :heavy_check_mark: |
-| `*.xslt`       | HTML           |                    |
+| `*.xslt`       | HTML           | :heavy_check_mark: |
 |                | XML            |                    |
 
 ## Long tail languages
@@ -57,7 +57,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 |                                                      | VB.net           |              |                                     |                    |
 | `*.bug`                                              | BUGS             | :x:          |                                     | :heavy_check_mark: |
 |                                                      | JAGS             | :x:          |                                     | :heavy_check_mark: |
-| `*.def`                                              | Modula-2         |              |                                     |                    |
+| `*.def`                                              | Modula-2         | :x:          |                                     | :heavy_check_mark: |
 |                                                      | Singularity      | :x:          |                                     | :heavy_check_mark: |
 | `*.ecl`                                              | ECL              | :x:          |                                     |                    |
 |                                                      | Prolog           |              |                                     |                    |

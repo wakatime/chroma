@@ -8,8 +8,8 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | ---            | ---            | ---                |
 | `*.as`         | ActionScript   | :heavy_check_mark: |
 |                | ActionScript 3 | :heavy_check_mark: |
-| `*.asm`        | NASM           |                    |
-|                | TASM           |                    |
+| `*.asm`        | NASM           | :heavy_check_mark: |
+|                | TASM           | :heavy_check_mark: |
 | `*.bas`        | QBasic         | :heavy_check_mark: |
 |                | VB.net         | :heavy_check_mark: |
 | `*.c`          | C              | :heavy_check_mark: |
@@ -27,16 +27,16 @@ For the following lexers, text analysis capabilities of pygments have to be port
 |                | Octave         | :heavy_check_mark: |
 | `*.mc`         | Mason          | :heavy_check_mark: |
 |                | MonkeyC        |                    |
-| `*.pl`         | Perl           |                    |
-|                | Prolog         |                    |
+| `*.pl`         | Perl           | :heavy_check_mark: |
+|                | Prolog         | :heavy_check_mark: |
 | `*.s`          | GAS            | :heavy_check_mark: |
 |                | R              | :heavy_check_mark: |
 | `*.sql`        | MySQL          |                    |
 |                | SQL            | :heavy_check_mark: |
 | `*.ts`         | TypeScript     |                    |
 |                | TypoScript     |                    |
-| `*.v`          | Coq            |                    |
-|                | verilog        |                    |
+| `*.v`          | Coq            | :heavy_check_mark: |
+|                | verilog        | :heavy_check_mark: |
 | `*.xslt`       | HTML           | :heavy_check_mark: |
 |                | XML            |                    |
 
@@ -44,19 +44,19 @@ For the following lexers, text analysis capabilities of pygments have to be port
 
 | file extension(s)                                    | lexer            | lexer exists | note                                | done               |
 | ---                                                  | ---              | ---          | ---                                 | ---                |
-| `*.asax`,`*.ascx`,`*.ashx`,`*.asmx`,`*.aspx`,`*.axd` | aspx-cs          | :x:          |                                     |                    |
-|                                                      | aspx-vb          | :x:          |                                     |                    |
+| `*.asax`,`*.ascx`,`*.ashx`,`*.asmx`,`*.aspx`,`*.axd` | aspx-cs          | :x:          |                                     | :heavy_check_mark: |
+|                                                      | aspx-vb          | :x:          |                                     | :heavy_check_mark: |
 | `*.ASM`                                              | NASM             |              |                                     |                    |
 |                                                      | TASM             |              |                                     |                    |
 | `*.S`                                                | GAS              |              |                                     |                    |
 |                                                      | S                | :x:          |                                     |                    |
 | `*.b`                                                | Brainfuck        |              |                                     |                    |
-|                                                      | Limbo            | :x:          |                                     |                    |
-| `*.bas`                                              | CBM BASIC V2     | :x:          |                                     |                    |
+|                                                      | Limbo            | :x:          |                                     | :heavy_check_mark: |
+| `*.bas`                                              | CBM BASIC V2     | :x:          |                                     | :heavy_check_mark: |
 |                                                      | QBasic           |              |                                     |                    |
 |                                                      | VB.net           |              |                                     |                    |
-| `*.bug`                                              | BUGS             | :x:          |                                     |                    |
-|                                                      | JAGS             | :x:          |                                     |                    |
+| `*.bug`                                              | BUGS             | :x:          |                                     | :heavy_check_mark: |
+|                                                      | JAGS             | :x:          |                                     | :heavy_check_mark: |
 | `*.def`                                              | Modula-2         |              |                                     |                    |
 |                                                      | Singularity      | :x:          |                                     |                    |
 | `*.ecl`                                              | ECL              | :x:          |                                     |                    |

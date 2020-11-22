@@ -1,9 +1,13 @@
 package t
 
 import (
+	"regexp"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
+
+var tasmAnalyzerRe = regexp.MustCompile(`(?i)PROC`)
 
 // Tasm lexer.
 var Tasm = internal.Register(MustNewLexer(
@@ -58,4 +62,10 @@ var Tasm = internal.Register(MustNewLexer(
 			{`byte|[dq]?word`, KeywordType, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if tasmAnalyzerRe.MatchString(text) {
+		return 1.0
+	}
+
+	return 0
+}))

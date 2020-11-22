@@ -1,9 +1,13 @@
 package n
 
 import (
+	"regexp"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
+
+var nasmAnalyzerRe = regexp.MustCompile(`(?i)PROC`)
 
 // Nasm lexer.
 var Nasm = internal.Register(MustNewLexer(
@@ -56,4 +60,11 @@ var Nasm = internal.Register(MustNewLexer(
 			{`byte|[dq]?word`, KeywordType, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// Probably TASM
+	if nasmAnalyzerRe.MatchString(text) {
+		return 0
+	}
+
+	return 0
+}))

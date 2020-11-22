@@ -24,7 +24,7 @@ func TestDoctype_MatchString(t *testing.T) {
 			Pattern:  `html`,
 			Expected: true,
 		},
-		"xml not match": {
+		"missing exclamation mark": {
 			Text:     "<?xml ?> <DOCTYPE html PUBLIC \"a\"> <html>",
 			Pattern:  `html.*`,
 			Expected: false,

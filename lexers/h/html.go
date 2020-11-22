@@ -5,6 +5,7 @@ import (
 	. "github.com/alecthomas/chroma/lexers/c" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 	. "github.com/alecthomas/chroma/lexers/j" // nolint
+	"github.com/alecthomas/chroma/pkg/doctype"
 )
 
 // HTML lexer.
@@ -56,4 +57,10 @@ var HTML = internal.Register(MustNewLexer(
 			{`[^\s>]+`, LiteralString, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if matched, _ := doctype.MatchString(text, "html"); matched {
+		return 0.5
+	}
+
+	return 0
+}))

@@ -9,7 +9,7 @@ var TOML = internal.Register(MustNewLexer(
 	&Config{
 		Name:      "TOML",
 		Aliases:   []string{"toml"},
-		Filenames: []string{"*.toml"},
+		Filenames: []string{"*.toml", "Pipfile", "poetry.lock"},
 		MimeTypes: []string{"text/x-toml"},
 	},
 	Rules{

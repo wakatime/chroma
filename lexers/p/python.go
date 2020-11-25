@@ -8,9 +8,28 @@ import (
 // Python lexer.
 var Python = internal.Register(MustNewLexer(
 	&Config{
-		Name:      "Python",
-		Aliases:   []string{"python", "py", "sage"},
-		Filenames: []string{"*.py", "*.pyw", "*.sc", "SConstruct", "SConscript", "*.tac", "*.sage"},
+		Name:    "Python",
+		Aliases: []string{"python", "py", "sage"},
+		Filenames: []string{
+			"*.py",
+			"*.pyw",
+			// Jython
+			"*.jy",
+			// Sage
+			"*.sage",
+			// SCons
+			"*.sc",
+			"SConstruct",
+			"SConscript",
+			// Skylark/Starlark (used by Bazel, Buck, and Pants)
+			"*.bzl",
+			"BUCK",
+			"BUILD",
+			"BUILD.bazel",
+			"WORKSPACE",
+			// Twisted Application infrastructure
+			"*.tac",
+		},
 		MimeTypes: []string{"text/x-python", "application/x-python"},
 	},
 	Rules{

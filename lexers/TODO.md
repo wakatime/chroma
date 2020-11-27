@@ -64,8 +64,8 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | `*.gd`                                               | GAP              | :x:          |                                     |                    |
 |                                                      | GDScript         | :x:          |                                     | :heavy_check_mark: |
 | `*.hy`                                               | Hy               |              |                                     |                    |
-|                                                      | Hybris           | :x:          |                                     |                    |
-| `*.inc`                                              | Pawn             | :x:          |                                     |                    |
+|                                                      | Hybris           | :x:          |                                     | :heavy_check_mark: |
+| `*.inc`                                              | Pawn             | :x:          |                                     | :heavy_check_mark: |
 |                                                      | PHP              |              |                                     |                    |
 |                                                      | POVRay           |              |                                     |                    |
 | `*.inf`                                              | Inform 6         | :x:          |                                     |                    |
@@ -75,7 +75,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | `*.n`                                                | Ezhil            | :x:          |                                     |                    |
 |                                                      | Nemerle          | :x:          |                                     |                    |
 | `*.p`                                                | OpenEdge ABL     | :x:          |                                     |                    |
-|                                                      | Pawn             | :x:          |                                     |                    |
+|                                                      | Pawn             | :x:          |                                     | :heavy_check_mark: |
 | `*.pl`                                               | Perl6            | :x:          |                                     |                    |
 |                                                      | Perl             |              |                                     |                    |
 |                                                      | Prolog           |              |                                     |                    |

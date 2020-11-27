@@ -1,6 +1,8 @@
 package h
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -48,4 +50,10 @@ var Hy = internal.Register(MustNewLexer(
 			{Words(`(?<!\.)`, `\b`, `ArithmeticError`, `AssertionError`, `AttributeError`, `BaseException`, `DeprecationWarning`, `EOFError`, `EnvironmentError`, `Exception`, `FloatingPointError`, `FutureWarning`, `GeneratorExit`, `IOError`, `ImportError`, `ImportWarning`, `IndentationError`, `IndexError`, `KeyError`, `KeyboardInterrupt`, `LookupError`, `MemoryError`, `NameError`, `NotImplemented`, `NotImplementedError`, `OSError`, `OverflowError`, `OverflowWarning`, `PendingDeprecationWarning`, `ReferenceError`, `RuntimeError`, `RuntimeWarning`, `StandardError`, `StopIteration`, `SyntaxError`, `SyntaxWarning`, `SystemError`, `SystemExit`, `TabError`, `TypeError`, `UnboundLocalError`, `UnicodeDecodeError`, `UnicodeEncodeError`, `UnicodeError`, `UnicodeTranslateError`, `UnicodeWarning`, `UserWarning`, `ValueError`, `VMSError`, `Warning`, `WindowsError`, `ZeroDivisionError`), NameException, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if strings.Contains(text, "(import ") || strings.Contains(text, "(defn ") {
+		return 0.9
+	}
+
+	return 0
+}))

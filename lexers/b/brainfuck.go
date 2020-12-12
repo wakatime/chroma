@@ -1,6 +1,8 @@
 package b
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
@@ -31,4 +33,38 @@ var Brainfuck = internal.Register(MustNewLexer(
 			Include("common"),
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	// it's safe to assume that a program which mostly consists of + -
+	// and < > is brainfuck.
+	var plusMinusCount float64
+	var greaterLessCount float64
+
+	rangeToCheck := len(text)
+
+	if rangeToCheck > 256 {
+		rangeToCheck = 256
+	}
+
+	for _, c := range text[:rangeToCheck] {
+		if c == '+' || c == '-' {
+			plusMinusCount++
+		}
+		if c == '<' || c == '>' {
+			greaterLessCount++
+		}
+	}
+
+	if plusMinusCount > (0.25 * float64(rangeToCheck)) {
+		return 1.0
+	}
+
+	if greaterLessCount > (0.25 * float64(rangeToCheck)) {
+		return 1.0
+	}
+
+	if strings.Contains(text, "[-]") {
+		return 0.5
+	}
+
+	return 0
+}))

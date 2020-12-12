@@ -49,7 +49,7 @@ For the following lexers, text analysis capabilities of pygments have to be port
 | `*.ASM`                                              | NASM             |              |                                     |                    |
 |                                                      | TASM             |              |                                     |                    |
 | `*.S`                                                | GAS              |              |                                     |                    |
-|                                                      | S                | :x:          |                                     |                    |
+|                                                      | S                | :x:          |                                     | :heavy_check_mark: |
 | `*.b`                                                | Brainfuck        |              |                                     |                    |
 |                                                      | Limbo            | :x:          |                                     | :heavy_check_mark: |
 | `*.bas`                                              | CBM BASIC V2     | :x:          |                                     | :heavy_check_mark: |

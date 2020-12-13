@@ -46,3 +46,16 @@ var Cfstatement = internal.Register(MustNewLexer(
 		},
 	},
 ))
+
+// ColdfusionHTML lexer.
+var ColdfusionHTML = internal.Register(MustNewLexer(
+	&Config{
+		Name:      "Coldfusion HTML",
+		Aliases:   []string{"cfm"},
+		Filenames: []string{"*.cfm", "*.cfml"},
+		MimeTypes: []string{"application/x-coldfusion"},
+	},
+	Rules{
+		"root": {},
+	},
+))

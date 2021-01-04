@@ -3,6 +3,7 @@ package x
 import (
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
+	"github.com/alecthomas/chroma/pkg/xml"
 )
 
 // XML lexer.
@@ -42,4 +43,10 @@ var XML = internal.Register(MustNewLexer(
 			{`[^\s>]+`, LiteralString, Pop(1)},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	if xml.MatchString(text) {
+		return 0.45 // less than HTML.
+	}
+
+	return 0
+}))

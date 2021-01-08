@@ -31,7 +31,28 @@ var HTTP = internal.Register(httpBodyContentTypeLexer(MustNewLexer(
 			{`.+`, EmitterFunc(httpContentBlock), nil},
 		},
 	},
-)))
+).SetAnalyser(func(text string) float32 {
+	if strings.HasPrefix(text, "GET") ||
+		strings.HasPrefix(text, "POST") ||
+		strings.HasPrefix(text, "PUT") ||
+		strings.HasPrefix(text, "DELETE") ||
+		strings.HasPrefix(text, "HEAD") ||
+		strings.HasPrefix(text, "OPTIONS") ||
+		strings.HasPrefix(text, "TRACE") ||
+		strings.HasPrefix(text, "PATCH") {
+		return 1.0
+	}
+
+	return 0
+})))
+
+func (d *httpBodyContentTyper) AnalyseText(text string) float32 {
+	if analyser, ok := d.Lexer.(Analyser); ok {
+		return analyser.AnalyseText(text)
+	}
+
+	return 0
+}
 
 func httpContentBlock(groups []string, lexer Lexer) Iterator {
 	tokens := []Token{

@@ -80,16 +80,16 @@
 | autohotkey                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | AutoIt                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | BBC Basic                     |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| BBCode                        |                                     |                    |                    |
-| BC                            |                                     |                    |                    |
-| BST                           |                                     |                    |                    |
-| BARE                          |                                     |                    |                    |
-| Bash Session                  |                                     |                    |                    |
-| Befunge                       |                                     |                    |                    |
-| BlitzMax                      |                                     |                    |                    |
-| Boa                           |                                     |                    |                    |
-| Boo                           |                                     |                    |                    |
-| Boogie                        |                                     |                    |                    |
+| BBCode                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| BC                            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| BST                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| BARE                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Bash Session                  | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Befunge                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| BlitzMax                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Boa                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Boo                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Boogie                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Brainfuck                     |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | BUGS                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | c-objdump                     |                                     |                    |                    |

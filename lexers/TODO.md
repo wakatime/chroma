@@ -119,16 +119,16 @@
 | Csound Score                  |                                     |                    |                    |
 | CUDA                          |                                     |                    |                    |
 | Cypher                        |                                     |                    |                    |
-| d-objdump                     |                                     |                    |                    |
-| Darcs Patch                   |                                     |                    |                    |
-| DASM16                        |                                     |                    |                    |
-| Debian Control file           |                                     |                    |                    |
-| Devicetree                    |                                     |                    |                    |
-| dg                            |                                     |                    |                    |
-| Duel                          |                                     |                    |                    |
-| Dylan session                 |                                     |                    |                    |
-| Dylan                         |                                     |                    |                    |
-| DylanLID                      |                                     |                    |                    |
+| d-objdump                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Darcs Patch                   | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| DASM16                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Debian Control file           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Devicetree                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| dg                            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Duel                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Dylan session                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Dylan                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| DylanLID                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | E-mail                        |                                     |                    |                    |
 | eC                            |                                     |                    |                    |
 | Earl Grey                     |                                     |                    |                    |

@@ -92,33 +92,36 @@
 | Boogie                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Brainfuck                     |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | BUGS                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| c-objdump                     |                                     |                    |                    |
+| c-objdump                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | ca65 assembler                |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| CAmkES                        |                                     |                    |                    |
+| CAmkES                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | CBM BASIC V2                  |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| CPSA                          |                                     |                    |                    |
-| cADL                          |                                     |                    |                    |
-| CapDL                         |                                     |                    |                    |
-| Chapel                        |                                     |                    |                    |
-| Charmci                       |                                     |                    |                    |
-| Cirru                         |                                     |                    |                    |
-| Clay                          |                                     |                    |                    |
-| Clean                         |                                     |                    |                    |
-| ClojureScript                 |                                     |                    |                    |
-| COBOLFree                     |                                     |                    |                    |
-| Coldfusion CFC                |                                     |                    |                    |
-| Common Lisp                   | Lexer exists in chroma              | :heavy_check_mark: |                    |
-| Component Pascal              |                                     |                    |                    |
+| CPSA                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| cADL                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| CapDL                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Chapel                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Charmci                       | Text analysis inherits from C++.    | :heavy_check_mark: | :heavy_check_mark: |
+|                               | However ci file is only interface   |                    |                    |
+|                               | and there's no reason to have text  |                    |                    |
+|                               | analysis based on C++ on it.        |                    |                    |
+| Cirru                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Clay                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Clean                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| ClojureScript                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| COBOLFree                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Coldfusion CFC                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Common Lisp                   | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Component Pascal              | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Coq                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| cpp-objdump                   |                                     |                    |                    |
-| Crmsh                         |                                     |                    |                    |
-| Croc                          |                                     |                    |                    |
-| Cryptol                       |                                     |                    |                    |
-| Csound Document               |                                     |                    |                    |
-| Csound Orchestra              |                                     |                    |                    |
-| Csound Score                  |                                     |                    |                    |
-| CUDA                          |                                     |                    |                    |
-| Cypher                        |                                     |                    |                    |
+| cpp-objdump                   | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Crmsh                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Croc                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Cryptol                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Csound Document               | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Csound Orchestra              | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Csound Score                  | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| CUDA                          | Text analysis inherits from C.      | :heavy_check_mark: | :heavy_check_mark: |
+| Cypher                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | d-objdump                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Darcs Patch                   | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | DASM16                        | No text analysis exists in pygments | :heavy_check_mark: |                    |

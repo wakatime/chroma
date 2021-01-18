@@ -132,18 +132,18 @@
 | Dylan session                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Dylan                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | DylanLID                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
-| E-mail                        |                                     |                    |                    |
-| eC                            |                                     |                    |                    |
-| Earl Grey                     |                                     |                    |                    |
-| Easytrieve                    |                                     |                    |                    |
+| E-mail                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| eC                            | Text analysis inherits from C.      | :heavy_check_mark: | :heavy_check_mark: |
+| Earl Grey                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Easytrieve                    |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | ECL                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Eiffel                        |                                     |                    |                    |
-| Elixir iex session            |                                     |                    |                    |
-| EmacsLisp                     |  Lexer exists in chroma             | :heavy_check_mark: |                    |
-| ERB                           |                                     |                    |                    |
-| Erlang erl session            |                                     |                    |                    |
-| Evoque                        |                                     |                    |                    |
-| execline                      |                                     |                    |                    |
+| Eiffel                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Elixir iex session            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| EmacsLisp                     | Lexer exists in chroma              | :heavy_check_mark: |                    |
+| ERB                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Erlang erl session            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Evoque                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| execline                      |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Ezhil                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | F#                            |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | FStar                         | No text analysis exists in pygments | :heavy_check_mark: |                    |

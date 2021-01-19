@@ -159,10 +159,10 @@
 | GAP                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | GAS                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | GDScript                      |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Gettext Catalog               |                                     |                    |                    |
-| Golo                          |                                     |                    |                    |
-| GoodData-CL                   |                                     |                    |                    |
-| Groff                         |                                     |                    |                    |
+| Gettext Catalog               | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Golo                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| GoodData-CL                   | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Groff                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | HLSL                          |                                     |                    |                    |
 | Haml                          |                                     |                    |                    |
 | HSAIL                         |                                     |                    |                    |

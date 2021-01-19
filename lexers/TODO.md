@@ -172,15 +172,15 @@
 | Hxml                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Hy                            |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Hybris                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Icon                          |                                     |                    |                    |
+| Icon                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | IDL                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | INI                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Inform 6                      |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Inform 6 template             |                                     |                    |                    |
-| Inform 7                      |                                     |                    |                    |
-| Ioke                          |                                     |                    |                    |
-| IRC logs                      |                                     |                    |                    |
-| Isabelle                      |                                     |                    |                    |
+| Inform 6 template             | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Inform 7                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Ioke                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| IRC logs                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Isabelle                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | JAGS                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Jasmin                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | JCL                           |                                     |                    |                    |

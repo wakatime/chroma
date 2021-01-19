@@ -190,10 +190,10 @@
 | Java Server Page              |                                     |                    |                    |
 | Julia console                 |                                     |                    |                    |
 | Juttle                        |                                     |                    |                    |
-| Kal                           |                                     |                    |                    |
-| Kconfig                       |                                     |                    |                    |
-| Kernel log                    |                                     |                    |                    |
-| Koka                          |                                     |                    |                    |
+| Kal                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Kconfig                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Kernel log                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Koka                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | LSL                           |                                     |                    |                    |
 | Lean                          |                                     |                    |                    |
 | Limbo                         |                                     | :heavy_check_mark: | :heavy_check_mark: |

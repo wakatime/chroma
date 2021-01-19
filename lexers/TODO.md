@@ -340,8 +340,8 @@
 | XSLT                          |                                     |                    |                    |
 | Xtend                         |                                     |                    |                    |
 | xtlang                        |                                     |                    |                    |
-| Zeek                          |                                     |                    |                    |
-| Zephir                        |                                     |                    |                    |
+| Zeek                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Zephir                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 
 ## Missing file extension support
 

@@ -320,10 +320,9 @@
 | Turtle                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Typographic Number Theory     |                                     |                    |                    |
 | ucode                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Unicon                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | UrbiScript                    |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Unicon                        |                                     |                    |                    |
-| UrbiScript                    |                                     |                    |                    |
-| USD                           |                                     |                    |                    |
+| USD                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Vala                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | VBScript                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | VCLSnippets                   | No text analysis exists in pygments | :heavy_check_mark: |                    |

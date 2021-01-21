@@ -183,13 +183,14 @@
 | Isabelle                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | JAGS                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Jasmin                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| JCL                           |                                     |                    |                    |
-| JSGF                          |                                     |                    |                    |
-| JSONBareObject                |                                     |                    |                    |
-| JSON-LD                       |                                     |                    |                    |
-| Java Server Page              |                                     |                    |                    |
-| Julia console                 |                                     |                    |                    |
-| Juttle                        |                                     |                    |                    |
+| JCL                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| JSGF                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| JSONBareObject                | Deprecated in pygments. Behaves the |                    |                    |
+|                               | same as `Json lexer` now.           |                    |                    |
+| JSON-LD                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Java Server Page              |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Julia console                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Juttle                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Kal                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Kconfig                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Kernel log                    | No text analysis exists in pygments | :heavy_check_mark: |                    |

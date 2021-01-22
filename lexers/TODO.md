@@ -306,20 +306,21 @@
 | Debian Sourcelist             |                                     |                    |                    |
 | sqlite3con                    |                                     |                    |                    |
 | Scalate Server Page           |                                     |                    |                    |
-| TrafficScript                 |                                     |                    |                    |
 | TADS 3                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| TAP                           |                                     |                    |                    |
+| TAP                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | TASM                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Tcsh Session                  |                                     |                    |                    |
-| Tea                           |                                     |                    |                    |
+| Tcsh Session                  | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Tea                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Tera Term macro               |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Text only                     |                                     |                    |                    |
-| tiddler                       |                                     |                    |                    |
-| Todotxt                       |                                     |                    |                    |
+| Text only                     | Named "plaintext" lexer in chroma   | :heavy_check_mark: |                    |
+|                               | No text analysis exists in pygments |                    |                    |
+| tiddler                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Todotxt                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| TrafficScript                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Transact-SQL                  |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Treetop                       |                                     |                    |                    |
+| Treetop                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Turtle                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Typographic Number Theory     |                                     |                    |                    |
+| Typographic Number Theory     | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | ucode                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Unicon                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | UrbiScript                    |                                     | :heavy_check_mark: | :heavy_check_mark: |

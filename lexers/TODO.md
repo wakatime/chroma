@@ -195,18 +195,18 @@
 | Kconfig                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Kernel log                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Koka                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
-| LSL                           |                                     |                    |                    |
-| Lean                          |                                     |                    |                    |
+| LSL                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Lean                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Limbo                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Literate Agda                 |                                     |                    |                    |
-| Literate Cryptol              |                                     |                    |                    |
-| Literate Haskell              |                                     |                    |                    |
-| Literate Idris                |                                     |                    |                    |
-| LiveScript                    |                                     |                    |                    |
-| LLVM-MIR Body                 |                                     |                    |                    |
-| LLVM-MIR                      |                                     |                    |                    |
-| Logos                         |                                     |                    |                    |
-| Logtalk                       |                                     |                    |                    |
+| Literate Agda                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Literate Cryptol              | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Literate Haskell              | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Literate Idris                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| LiveScript                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| LLVM-MIR                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| LLVM-MIR Body                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Logos                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Logtalk                       |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | MIME                          |                                     |                    |                    |
 | MOOCode                       |                                     |                    |                    |
 | MSDOS Session                 |                                     |                    |                    |

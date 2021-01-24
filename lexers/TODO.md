@@ -287,25 +287,25 @@
 | RSL                           |                                     |                    |                    |
 | Ruby irb session              |                                     |                    |                    |
 | S                             | It's implemented altogether in r.go | :heavy_check_mark: | :heavy_check_mark: |
-| SARL                          |                                     |                    |                    |
-| Scaml                         |                                     |                    |                    |
+| SARL                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Scalate Server Page           |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Scaml                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | scdoc                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| ShExC                         |                                     |                    |                    |
-| Shen                          |                                     |                    |                    |
-| Sieve                         |                                     |                    |                    |
-| Silver                        |                                     |                    |                    |
+| Shen                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| ShExC                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Sieve                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Silver                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Singularity                   |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Slash                         | No text analysis exists in pygments |                    |                    |
-| Slurm                         | No text analysis exists in pygments |                    |                    |
-| SmartGameFormat               |                                     |                    |                    |
-| Snowball                      |                                     |                    |                    |
+| Slash                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Slurm                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| SmartGameFormat               | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Snowball                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | SQL                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Stan                          |                                     |                    |                    |
-| Stata                         |                                     |                    |                    |
+| Stan                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Stata                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | SuperCollider                 |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Debian Sourcelist             |                                     |                    |                    |
-| sqlite3con                    |                                     |                    |                    |
-| Scalate Server Page           |                                     |                    |                    |
+| Sourcelist/Debian Sourceslist |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| sqlite3con                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | TADS 3                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | TAP                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | TASM                          |                                     | :heavy_check_mark: | :heavy_check_mark: |

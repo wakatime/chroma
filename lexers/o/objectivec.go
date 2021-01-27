@@ -21,13 +21,15 @@ var (
 	objectiveCAnalyserNSNumberRe = regexp.MustCompile(`@[0-9]+`)
 )
 
-// Objective-C lexer.
+// ObjectiveC lexer.
 var ObjectiveC = internal.Register(MustNewLexer(
 	&Config{
 		Name:      "Objective-C",
 		Aliases:   []string{"objective-c", "objectivec", "obj-c", "objc"},
 		Filenames: []string{"*.m", "*.h"},
 		MimeTypes: []string{"text/x-objective-c"},
+		// Lower than C.
+		Priority: 0.05,
 	},
 	Rules{
 		"statements": {

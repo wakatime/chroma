@@ -230,16 +230,16 @@
 | MuPAD                         |                                     |                    |                    |
 | MXML                          |                                     |                    |                    |
 | NASM                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| NCL                           |                                     |                    |                    |
+| NCL                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Nemerle                       |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| NSIS                          |                                     |                    |                    |
-| objdump-nasm                  |                                     |                    |                    |
-| nesC                          |                                     |                    |                    |
-| Nimrod                        |                                     |                    |                    |
-| Nit                           |                                     |                    |                    |
-| Notmuch                       |                                     |                    |                    |
-| NuSMV                         |                                     |                    |                    |
-| NumPy                         |                                     |                    |                    |
+| NSIS                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| objdump-nasm                  | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| nesC                          | Text analysis inherits from C.      | :heavy_check_mark: | :heavy_check_mark: |
+| Nimrod                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Nit                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Notmuch                       |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| NuSMV                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| NumPy                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | objdump                       |                                     |                    |                    |
 | Objective-J                   |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | ODIN                          |                                     |                    |                    |

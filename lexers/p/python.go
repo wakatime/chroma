@@ -1,8 +1,11 @@
 package p
 
 import (
+	"strings"
+
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
+	"github.com/alecthomas/chroma/pkg/shebang"
 )
 
 // Python lexer.
@@ -153,4 +156,16 @@ var Python = internal.Register(MustNewLexer(
 			{`\n`, LiteralStringSingle, nil},
 		},
 	},
-))
+).SetAnalyser(func(text string) float32 {
+	matched, _ := shebang.MatchString(text, `pythonw?(3(\.\d)?)?`)
+
+	if len(text) > 1000 {
+		text = text[:1000]
+	}
+
+	if matched || strings.Contains(text, "import ") {
+		return 1.0
+	}
+
+	return 0
+}))

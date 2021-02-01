@@ -278,23 +278,23 @@
 | Python Traceback              |                                     |                    |                    |
 | QBasic                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | QVTO                          |                                     |                    |                    |
-| RConsole                      |                                     |                    |                    |
-| Relax-NG Compact              |                                     |                    |                    |
-| Embedded Ragel                |                                     |                    |                    |
-| Raw token data                |                                     |                    |                    |
-| Rd                            |                                     |                    |                    |
-| REBOL                         |                                     |                    |                    |
-| Red                           |                                     |                    |                    |
-| Redcode                       |                                     |                    |                    |
-| ResourceBundle                |                                     |                    |                    |
-| RHTML                         |                                     |                    |                    |
-| Ride                          |                                     |                    |                    |
-| Roboconf Graph                |                                     |                    |                    |
-| Roboconf Instances            |                                     |                    |                    |
-| RobotFramework                |                                     |                    |                    |
-| RQL                           |                                     |                    |                    |
-| RSL                           |                                     |                    |                    |
-| Ruby irb session              |                                     |                    |                    |
+| RConsole                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Relax-NG Compact              | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Ragel Embedded                |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Raw token data                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Rd                            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| REBOL                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Red                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Redcode                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| ResourceBundle                |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| RHTML                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Ride                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Roboconf Graph                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Roboconf Instances            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| RobotFramework                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| RQL                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| RSL                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Ruby irb session              | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | S                             | It's implemented altogether in r.go | :heavy_check_mark: | :heavy_check_mark: |
 | SARL                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Scalate Server Page           |                                     | :heavy_check_mark: | :heavy_check_mark: |

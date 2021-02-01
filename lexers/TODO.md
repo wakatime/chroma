@@ -207,28 +207,32 @@
 | LLVM-MIR Body                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Logos                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | Logtalk                       |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| MIME                          |                                     |                    |                    |
-| MOOCode                       |                                     |                    |                    |
-| MSDOS Session                 |                                     |                    |                    |
-| Makefile                      |                                     |                    |                    |
-| MAQL                          |                                     |                    |                    |
-| markdown                      |  Lexer exists in chroma             | :heavy_check_mark: |                    |
-| Mask                          |                                     |                    |                    |
-| Matlab session                |                                     |                    |                    |
-| MiniD                         |                                     |                    |                    |
-| MiniScript                    |                                     |                    |                    |
+| MIME                          | analyse_text at Pygments is broken  | :heavy_check_mark: |                    |
+|                               | Issue https://bit.ly/393s14x        |                    |                    |
+| MOOCode                       | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MSDOS Session                 | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Makefile                      |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| MAQL                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| markdown                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Mask                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Matlab session                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MiniD                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MiniScript                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Modula-2                      |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| MoinMoin/Trac Wiki markup     |                                     |                    |                    |
-| Monkey                        |                                     |                    |                    |
-| Monte                         |                                     |                    |                    |
-| MoonScript                    |                                     |                    |                    |
-| Mosel                         |                                     |                    |                    |
-| mozhashpreproc                |                                     |                    |                    |
-| mozpercentpreproc             |                                     |                    |                    |
-| MQL                           |                                     |                    |                    |
-| Mscgen                        |                                     |                    |                    |
-| MuPAD                         |                                     |                    |                    |
-| MXML                          |                                     |                    |                    |
+| MoinMoin/Trac Wiki markup     | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Monkey                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Monte                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MoonScript                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Mosel                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| mozhashpreproc                | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| mozpercentpreproc             | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MQL                           | Text analysis inherits from C++.    | :heavy_check_mark: | :heavy_check_mark: |
+|                               | However the include syntax seems to |                    |                    |
+|                               | always have file extension which is |                    |                    |
+|                               | not validated at C++ text analysis. |                    |                    |
+| Mscgen                        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MuPAD                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| MXML                          | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | NASM                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | NCL                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Nemerle                       |                                     | :heavy_check_mark: | :heavy_check_mark: |

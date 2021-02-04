@@ -9,7 +9,7 @@ import (
 	"github.com/alecthomas/chroma/pkg/shebang"
 )
 
-var perlAnalyzerRe = regexp.MustCompile(`(?:my|our)\s+[$@%(]`)
+var perlAnalyserRe = regexp.MustCompile(`(?:my|our)\s+[$@%(]`)
 
 // Perl lexer.
 var Perl = internal.Register(MustNewLexer(
@@ -148,7 +148,7 @@ var Perl = internal.Register(MustNewLexer(
 
 	var result float32 = 0
 
-	if perlAnalyzerRe.MatchString(text) {
+	if perlAnalyserRe.MatchString(text) {
 		result += 0.9
 	}
 

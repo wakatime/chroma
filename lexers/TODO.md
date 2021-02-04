@@ -255,27 +255,30 @@
 | Ooc                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Opa                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | OpenEdge ABL                  |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Pan                           |                                     |                    |                    |
-| ParaSail                      |                                     |                    |                    |
+| Pan                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| ParaSail                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Pawn                          |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| PEG                           |                                     |                    |                    |
-| Perl6                         |                                     |                    |                    |
+| PEG                           | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Perl6                         |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | PHP                           |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Pike                          |                                     |                    |                    |
-| Pointless                     |                                     |                    |                    |
-| PostgreSQL console (psql)     |                                     |                    |                    |
+| Pike                          | Text analysis inherits from C++.    | :heavy_check_mark: | :heavy_check_mark: |
+|                               | However the include syntax seems to |                    |                    |
+|                               | always have file extension which is |                    |                    |
+|                               | not validated at C++ text analysis. |                    |                    |
+| Pointless                     | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| PostgreSQL console (psql)     | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | POVRay                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| PowerShell Session            |                                     |                    |                    |
-| Praat                         |                                     |                    |                    |
+| PowerShell Session            | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Praat                         | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | Prolog                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
-| Properties                    |                                     |                    |                    |
-| PsySH console session for PHP |                                     |                    |                    |
-| PyPy Log                      |                                     |                    |                    |
-| Python                        |                                     |                    |                    |
-| Python 2.x                    |                                     |                    |                    |
-| Python 2.x Traceback          |                                     |                    |                    |
-| Python console session        |                                     |                    |                    |
-| Python Traceback              |                                     |                    |                    |
+| Properties                    | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| PsySH console session for PHP | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| PyPy Log                      | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Python                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Python 2.x                    |                                     | :heavy_check_mark: | :heavy_check_mark: |
+| Python 2.x Traceback          | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Python console session        | No text analysis exists in pygments | :heavy_check_mark: |                    |
+| Python Traceback              | No text analysis exists in pygments | :heavy_check_mark: |                    |
 | QBasic                        |                                     | :heavy_check_mark: | :heavy_check_mark: |
 | QVTO                          |                                     |                    |                    |
 | RConsole                      | No text analysis exists in pygments | :heavy_check_mark: |                    |

@@ -1,14 +1,11 @@
 package c
 
 import (
-	"regexp"
 	"strings"
 
 	. "github.com/alecthomas/chroma" // nolint
 	"github.com/alecthomas/chroma/lexers/internal"
 )
-
-var coqAnalyzerQedCommandRe = regexp.MustCompile(`[qQ]ed`)
 
 // Coq lexer.
 var Coq = internal.Register(MustNewLexer(
@@ -66,8 +63,7 @@ var Coq = internal.Register(MustNewLexer(
 		},
 	},
 ).SetAnalyser(func(text string) float32 {
-	if coqAnalyzerQedCommandRe.MatchString(text) &&
-		strings.Contains(text, "tauto") {
+	if strings.Contains(text, "Qed") && strings.Contains(text, "Proof") {
 		return 1.0
 	}
 

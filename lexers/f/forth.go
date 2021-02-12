@@ -45,7 +45,7 @@ var Forth = internal.Register(MustNewLexer(
 	// Forth uses : COMMAND ; quite a lot in a single line, so we're trying
 	// to find that.
 	if forthAnalyzerRe.MatchString(text) {
-		return 0.1
+		return 0.3
 	}
 
 	return 0

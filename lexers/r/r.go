@@ -15,6 +15,8 @@ var R = internal.Register(MustNewLexer(
 		Aliases:   []string{"splus", "s", "r"},
 		Filenames: []string{"*.S", "*.R", "*.r", ".Rhistory", ".Rprofile", ".Renviron"},
 		MimeTypes: []string{"text/S-plus", "text/S", "text/x-r-source", "text/x-r", "text/x-R", "text/x-r-history", "text/x-r-profile"},
+		// Higher priority than Rebol
+		Priority: 0.1,
 	},
 	Rules{
 		"comments": {

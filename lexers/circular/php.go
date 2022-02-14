@@ -19,6 +19,7 @@ var PHP = internal.Register(MustNewLazyLexer(
 		DotAll:          true,
 		CaseInsensitive: true,
 		EnsureNL:        true,
+		Priority:        1,
 	},
 	phpRules,
 ).SetAnalyser(func(text string) float32 {

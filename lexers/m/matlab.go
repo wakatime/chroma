@@ -18,7 +18,7 @@ var Matlab = internal.Register(MustNewLazyLexer(
 	&Config{
 		Name:      "Matlab",
 		Aliases:   []string{"matlab"},
-		Filenames: []string{"*.m"},
+		Filenames: []string{"*.m", "*.matlab"},
 		MimeTypes: []string{"text/matlab"},
 	},
 	matlabRules,

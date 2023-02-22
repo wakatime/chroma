@@ -631,7 +631,9 @@ func haxePreProcMutator(state *LexerState) error {
 			state.Stack = stack[len(stack)-1]
 		}
 	case "end":
-		stack = stack[:len(stack)-1]
+		if len(stack) > 0 {
+			stack = stack[:len(stack)-1]
+		}
 	}
 
 	if proc == "if" || proc == "elseif" {

@@ -5,8 +5,8 @@ import (
 	"github.com/alecthomas/chroma/lexers/internal"
 )
 
-// Slash lexer. Lexer for the Slash programming language.
-var Slash = internal.Register(MustNewLexer(
+// Slint lexer. Lexer for the Slint programming language.
+var Slint = internal.Register(MustNewLexer(
 	&Config{
 		Name:      "Slint",
 		Aliases:   []string{"slint"},

@@ -41,6 +41,9 @@ var Easytrieve = internal.Register(MustNewLexer(
 
 	// Remove possible empty lines and header comments.
 	for range lines {
+		if len(lines) == 0 {
+			break
+		}
 		if len(strings.TrimSpace(lines[0])) > 0 && !easytrieveAnalyserCommetLineRe.MatchString(lines[0]) {
 			break
 		}

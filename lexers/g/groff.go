@@ -50,12 +50,24 @@ var Groff = internal.Register(MustNewLazyLexer(
 		}
 	},
 ).SetAnalyser(func(text string) float32 {
+	if len(text) <= 1 {
+		return 0
+	}
+
 	if text[:1] != "." {
+		return 0
+	}
+
+	if len(text) <= 3 {
 		return 0
 	}
 
 	if text[:3] == `.\"` {
 		return 1.0
+	}
+
+	if len(text) <= 4 {
+		return 0
 	}
 
 	if text[:4] == ".TH " {

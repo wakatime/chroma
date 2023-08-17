@@ -52,7 +52,7 @@ var Easytrieve = internal.Register(MustNewLexer(
 		lines = lines[1:]
 	}
 
-	if easytrieveAnalyserMacroHeaderRe.MatchString(lines[0]) {
+	if len(lines) > 0 && easytrieveAnalyserMacroHeaderRe.MatchString(lines[0]) {
 		// Looks like an Easytrieve macro.
 		result += 0.4
 
